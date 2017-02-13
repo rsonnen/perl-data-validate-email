@@ -14,7 +14,7 @@ use Data::Validate::Email qw(is_username);
 
 my $t = ExtUtils::TBone->typical();
 
-$t->begin(10);
+$t->begin(11);
 $t->msg("testing is_username...");
 
 # valid
@@ -22,6 +22,7 @@ $t->ok(defined(is_username('sonnen')), 'sonnen');
 $t->ok(defined(is_username('bob.smith')), 'bob.smith');
 $t->ok(defined(is_username('bob-smith')), 'bob-smith');
 $t->ok(defined(is_username('a')), 'a');
+$t->ok(defined(is_username('bob-smith+cpan')), 'bob-smith+cpan');
 
 
 

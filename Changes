@@ -1,5 +1,8 @@
 Revision history for Perl extension Data::Validate::Email.
 
+0.05  20170213
+	- Allowed pluses in usernames per request from Adriano Ferreira (https://github.com/aferreira)
+    
 0.04  20061204
 	- added second argument to is_email and is_domain, passing both through to Data::Validate::Domain
 

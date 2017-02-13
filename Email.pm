@@ -25,7 +25,7 @@ use Data::Validate::Domain;
 
 %EXPORT_TAGS = ();
 
-$VERSION = '0.04';
+$VERSION = '0.05';
 
 
 # No preloads
@@ -348,7 +348,7 @@ sub is_username{
 	
 	return unless defined($value);
 	
-	my($username) = $value =~ /^([a-z0-9_\-\.]+)$/i;
+	my($username) = $value =~ /^([a-z0-9_\-\.\+]+)$/i;
 	
 	return $username;
 }
